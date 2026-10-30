@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedpbg"
+version = "1.0.0"
+description = "Utility-based personalization budget and geometry for federated learning (UBMK 2026)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Beyazıt Bestami Yüksel", email = "yukselbe18@itu.edu.tr" },
+]
+dependencies = [
+  "torch>=2.0.0",
+  "torchvision>=0.15.0",
+  "numpy>=1.24.0",
+  "pandas>=2.0.0",
+  "scikit-learn>=1.3.0",
+  "scipy>=1.11.0",
+  "matplotlib>=3.7.0",
+  "seaborn>=0.13.0",
+  "wfdb>=4.1.0",
+  "tqdm>=4.66.0",
+  "joblib>=1.3.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["fedpbg*"]
